@@ -1,0 +1,84 @@
+.notes__main-content {
+    display: flex;
+}
+
+.notes__sidebar {
+    background-color: $dark-grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 450px;
+}
+
+.notes__sidebar-nabvar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes__sidebar-nabvar h3 {
+    font-weight: lighter;
+}
+
+.notes__new-entry {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: darken($color: white, $amount: 20);
+    }
+}
+
+.notes__entries {
+    flex: 1 1 auto;
+    margin-top: 30px;
+    overflow-y: scroll;
+}
+
+.notes__note {
+    background-color: white;
+    border-radius: 4px;
+    color: $dark-grey;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.notes__note-picture {
+    height: 55px;
+    width: 55px;
+}
+
+.notes__note-body {
+    padding: 10px;
+}
+
+.notes__note-body-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.notes__note-body-content {
+    font-size: 10px;
+}
+
+.notes__note-date-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.notes__note-date-box span {
+    font-size: 12px;
+}

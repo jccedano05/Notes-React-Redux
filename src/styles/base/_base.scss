@@ -33,3 +33,9 @@ main {
 .pointer {
     cursor: pointer;
 }
+
+@media (max-width: 820px) {
+    body {
+        overflow-y: visible;
+    }
+}
